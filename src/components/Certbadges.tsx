@@ -3,9 +3,9 @@ import awsCCP from "@/assets/AWS CCP.png";
 import azureAI900 from "@/assets/Azure AI 900.png";
 
 const badges = [
-  { label: "SAFe 6.0 POPM", img: SAFE PoPM },
-  { label: "AWS Cloud Practitioner", img: AWS CCP },
-  { label: "Microsoft Azure AI-900", img: Azure AI 900 },
+  { label: "SAFe 6.0 POPM", img: SAFE PoPM.png },
+  { label: "AWS Cloud Practitioner", img: AWS CCP.png },
+  { label: "Microsoft Azure AI-900", img: Azure AI 900.png },
 ];
 
 export const CertBadges = () => {
