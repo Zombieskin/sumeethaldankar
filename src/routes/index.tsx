@@ -19,7 +19,7 @@ const competencies: { label: string; value: number }[] = [
   { label: "Regulatory Compliance", value: 70 },
   { label: "Australian Market", value: 60 },
   { label: "AI as Enabler", value: 40 },
-];
+]
 
 const projects = [
   { years: "2025 – 2026", tag: "Cloud · Enterprise", title: "Siemens Energy — On-Prem to AWS Migration", body: "Orchestrated stakeholder alignment across 40+ business units globally. Consolidated GitLab, SonarQube and Artifactory into a single AWS instance. Net €141K savings from unification." },
