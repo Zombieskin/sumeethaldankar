@@ -74,7 +74,7 @@ function Nav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-mono text-sm">~/sumeet<span className="ml-0.5 inline-block h-4 w-1.5 translate-y-0.5 animate-pulse bg-foreground" /></a>
+        <a href="#top" className="font-mono text-sm">~/sumeet haldankar<span className="ml-0.5 inline-block h-4 w-1.5 translate-y-0.5 animate-pulse bg-foreground" /></a>
         <nav className="hidden items-center gap-7 text-sm md:flex">
           <a href="#projects" className="hover:opacity-60">Projects</a>
           <a href="#approach" className="hover:opacity-60">Approach</a>
@@ -111,7 +111,7 @@ function Hero() {
   return (
     <section id="top" className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-16 md:grid-cols-2 md:py-24">
       <div className="flex flex-col justify-center">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Senior Business Analyst · Melbourne</p>
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Product Owner and Senior Business Analyst · Melbourne</p>
         <h1 className="mt-6 text-5xl leading-[0.95] md:text-7xl">Sumeet<br />Haldankar</h1>
         <p className="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground">
           Product Owner & Senior BA with <span className="text-foreground">15 years</span> turning ambiguity into clear, practical outcomes across banking, payments, energy and cloud transformation.
