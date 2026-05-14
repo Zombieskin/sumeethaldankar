@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import portrait from "@/assets/sumeet-portrait.png";
-import safePOPM from "@/assets/SAFE PoPM.png";
-import awsCCP from "@/assets/AWS CCP.png";
-import azureAI900 from "@/assets/Azure AI 900.png";
+import safePOPM from "@/assets/safe-popm.png";
+import awsCCP from "@/assets/aws-ccp.png";
+import azureAI900 from "@/assets/azure-ai-900.png";
 
 export const Route = createFileRoute("/")({ component: Index });
 
@@ -135,6 +135,19 @@ function Hero() {
           ))}
         </div>
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Product Owner and Senior Business Analyst · Melbourne</p>
+        <h1 className="mt-6 font-display text-5xl leading-[1.05] md:text-7xl">Sumeet Haldankar</h1>
+        <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">15+ years turning complex enterprise problems into measurable outcomes across banking, energy and telecom.</p>
+        <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 font-mono text-xs">
+          <span className="h-2 w-2 rounded-full bg-success" />
+          Open to opportunities
+        </div>
+      </div>
+      <div className="relative">
+        <img src={portrait} alt="Sumeet Haldankar" className="aspect-[4/5] w-full rounded-2xl object-cover" />
+      </div>
+    </section>
+  );
+}
 
 function Compass() {
   return (
@@ -176,6 +189,7 @@ function Stack() {
             </div>
           ))}
         </div>
+      </div>
      </section>
   );
 }
