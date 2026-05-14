@@ -1,5 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import portrait from "@/assets/sumeet-portrait.png";
+import safePOPM from "@/assets/SAFE PoPM.png";
+import awsCCP from "@/assets/AWS CCP.png";
+import azureAI900 from "@/assets/Azure AI 900.png";
 
 export const Route = createFileRoute("/")({ component: Index });
 
@@ -107,34 +110,31 @@ function Ticker() {
   );
 }
 
+const certBadges = [
+  { label: "SAFe 6.0 POPM", img: safePOPM },
+  { label: "AWS Cloud Practitioner", img: awsCCP },
+  { label: "Microsoft Azure AI-900", img: azureAI900 },
+];
+
 function Hero() {
   return (
     <section id="top" className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-16 md:grid-cols-2 md:py-24">
       <div className="flex flex-col justify-center">
+        <div className="mb-6 flex flex-row items-center gap-4">
+          {certBadges.map((badge) => (
+            <div key={badge.label} title={badge.label} className="group flex flex-col items-center gap-1">
+              <img
+                src={badge.img}
+                alt={badge.label}
+                className="w-20 h-20 object-contain rounded-lg transition-transform duration-200 group-hover:scale-110"
+              />
+              <span className="text-[10px] text-center text-muted-foreground leading-tight max-w-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                {badge.label}
+              </span>
+            </div>
+          ))}
+        </div>
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Product Owner and Senior Business Analyst · Melbourne</p>
-        <h1 className="mt-6 text-5xl leading-[0.95] md:text-7xl">Sumeet<br />Haldankar</h1>
-        <p className="mt-8 max-w-md text-lg leading-relaxed text-muted-foreground">
-          Product Owner & Senior BA with <span className="text-foreground">15 years</span> turning ambiguity into clear, practical outcomes across banking, payments, energy and cloud transformation.
-        </p>
-        <div className="mt-10 inline-flex w-fit items-center gap-3 rounded-full border border-border bg-card px-3 py-2 font-mono text-xs">
-          <span className="rounded-full bg-success/15 px-2 py-0.5 text-[10px] font-medium text-foreground">LATEST ROLE</span>
-          <span className="text-muted-foreground">Siemens Energy</span>
-          <span className="opacity-40">/</span>
-          <span>Platform Product Owner — Cloud Migration</span>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="overflow-hidden rounded-3xl bg-secondary">
-          <img src={portrait} alt="Sumeet Haldankar portrait" width={1024} height={1280} className="h-full w-full object-cover" />
-        </div>
-        <div className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-foreground/85 px-3 py-1.5 font-mono text-xs text-background backdrop-blur">
-          <span className="h-2 w-2 rounded-full bg-success" />
-          Open to opportunities
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Compass() {
   return (
@@ -176,13 +176,7 @@ function Stack() {
             </div>
           ))}
         </div>
-        <div className="mt-8 flex flex-wrap gap-2 font-mono text-xs">
-          {["SAFe 6.0 POPM", "AWS CCP", "Microsoft Azure AI-900", "Scrum Fundamentals"].map((c) => (
-            <span key={c} className="rounded-full border border-border bg-background px-3 py-1.5">{c}</span>
-          ))}
-        </div>
-      </div>
-    </section>
+     </section>
   );
 }
 
