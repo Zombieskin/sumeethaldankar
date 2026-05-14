@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import portrait from "@/assets/sumeet-portrait.png";
-import safePOPM from "@/assets/SAFE PoPM.png";
-import awsCCP from "@/assets/AWS CCP.png";
-import azureAI900 from "@/assets/Azure AI 900.png";
+import safePOPM from "@/assets/safe-popm.png";
+import awsCCP from "@/assets/aws-ccp.png";
+import azureAI900 from "@/assets/azure-ai-900.png";
 
 export const Route = createFileRoute("/")({ component: Index });
 
