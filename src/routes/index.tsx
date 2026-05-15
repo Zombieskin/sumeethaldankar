@@ -263,11 +263,6 @@ function Approach() {
     </section>
   );
 }
-const certBadges = [
-  { label: "SAFe 6.0 POPM", img: safePOPM },
-  { label: "AWS Cloud Practitioner", img: awsCCP },
-  { label: "Microsoft Azure AI-900", img: azureAI900 },
-];
 
 function Contact() {
   return (
