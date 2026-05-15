@@ -1,6 +1,6 @@
-import safePOPM from "@/assets/SAFE PoPM.png";
-import awsCCP from "@/assets/AWS CCP.png";
-import azureAI900 from "@/assets/Azure AI 900.png";
+import safePOPM from "@/assets/safe-popm.png";
+import awsCCP from "@/assets/aws-ccp.png";
+import azureAI900 from "@/assets/azure-ai-900.png";
 
 const badges = [
   { label: "SAFe 6.0 POPM", img: safePOPM },
